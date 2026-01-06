@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Lisa Anton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="comet"></div>
+    <div class="comet"></div>
+    <div class="comet"></div>
+    <div class="comet"></div>
+    <div class="comet"></div>
+    <div class="comet"></div>
+    <div class="comet"></div>
+    <div class="comet"></div>
+  </div>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#cv">CV</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+        <div class="light-bulb">
+          <div class="bulb"></div>
+          <div class="bulb-base"></div>
+        </div>
+      </button>
+    </header>
+
+    <main>
+      <div class="hero-name">
+        <h1 class="hero__title">Lisa Anton</h1>
+        <p class="hero__subtitle">Etudiante en Informatique</p>
+      </div>
+
+      <section id="skills" class="section reveal">
+        <div class="section__head">
+          <p class="eyebrow">Compétences</p>
+          <h2>Hard skills</h2>
+        </div>
+        <div class="skills-grid stagger-container">
+          <div class="skill-card stagger-item">
+            <p class="label">HTML/CSS</p>
+            <p class="body">Intégration de pages web responsives, structuration du contenu et mise en forme.</p>
+          </div>
+          <div class="skill-card stagger-item">
+            <p class="label">JavaScript/JavaFX</p>
+            <p class="body">Interactions dynamiques, logique côté client, manipulation du DOM.</p>
+          </div>
+          <div class="skill-card stagger-item">
+            <p class="label">Go</p>
+            <p class="body">Bases du langage, écriture de programmes simples et logiques backend.</p>
+          </div>
+          <div class="skill-card stagger-item">
+            <p class="label">Linux</p>
+            <p class="body">Utilisation de la ligne de commande, gestion de fichiers et environnement de travail.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section__head">
+          <p class="eyebrow">Projets</p>
+          <h2>Réalisations et dépôts</h2>
+          <p class="section__lede">Une sélection de projets et dépôts publics.</p>
+        </div>
+        <div class="projects stagger-container">
+          <article class="project-card stagger-item">
+            <div class="project-card__head">
+              <p class="label">GitHub</p>
+              <a class="arrow-link" href="https://github.com/lyysax" target="_blank" rel="noreferrer">Voir le profil →</a>
+            </div>
+            <ul class="project-list">
+              <li>
+                <div>
+                  <p class="project-title">Agence de Voyage</p>
+                  <p class="body">Projet Java qui simule un site web pour commander un voyage.</p>
+                </div>
+                <a class="pill-link" href="https://github.com/lyysax/AgenceVoyage.git" target="_blank" rel="noreferrer">Repo</a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card stagger-item">
+            <div class="project-card__head">
+              <p class="label">Gitea</p>
+              <a class="arrow-link" href="https://ytrack.learn.ynov.com/git/alisa" target="_blank" rel="noreferrer">Voir le profil →</a>
+            </div>
+            <ul class="project-list">
+              <li>
+                <div>
+                  <p class="project-title">Groupie Tracker</p>
+                  <p class="body">Projet en HTML, CSS et Go utilisant une API pour répertorier des groupes de musique.</p>
+                </div>
+                <a class="pill-link" href="https://ytrack.learn.ynov.com/git/alisa/Groupie-Tracker.git" target="_blank" rel="noreferrer">Repo</a>
+              </li>
+              <li>
+                <div>
+                  <p class="project-title">Hepta</p>
+                  <p class="body">Site web en HTML et CSS pour diffuser des mini documentaires.</p>
+                </div>
+                <a class="pill-link" href="https://ytrack.learn.ynov.com/git/alisa/Sequence7.git" target="_blank" rel="noreferrer">Repo</a>
+              </li>
+              <li>
+                <div>
+                  <p class="project-title">Power 4</p>
+                  <p class="body">Reproduction du jeu Puissance 4 en HTML, CSS et Go.</p>
+                </div>
+                <a class="pill-link" href="https://ytrack.learn.ynov.com/git/haclement/Power4.git" target="_blank" rel="noreferrer">Repo</a>
+              </li>
+              <li>
+                <div>
+                  <p class="project-title">Projet Red</p>
+                  <p class="body">Petit jeu créé dans le terminal en Go seulement.</p>
+                </div>
+                <a class="pill-link" href="https://ytrack.learn.ynov.com/git/mtymoteu/projet-red.git" target="_blank" rel="noreferrer">Repo</a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="cv" class="section reveal">
+        <div class="section__head">
+          <h2>CV et contact</h2>
+          <p class="section__lede">Parlons projets, stages ou collaborations.</p>
+        </div>
+        <div class="cv-card">
+          <div>
+            <p class="label">CV</p>
+            <p class="body">Télécharge mon CV pour en savoir plus sur mon parcours et expériences.</p>
+            <a class="btn secondary" href="CV_LisaAnton.pdf" download>Télécharger mon CV</a>
+          </div>
+          <div>
+            <p class="label">Contact</p>
+            <p class="body">Disponible pour échanger et répondre rapidement.</p>
+            <div class="contact-links">
+              <a class="pill-link" href="mailto:lisa.anton0705@gmail.com">lisa.anton0705@gmail.com</a>
+              <a class="pill-link" href="https://www.linkedin.com/in/lisa-anton-0070b22a5/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <p>Portfolio de Lisa Anton — 2026</p>
+      <div class="footer__links">
+        <a href="#intro">Haut de page</a>
+        <a href="#projects">Projets</a>
+        <a href="#cv">CV</a>
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+  // Intersection Observer for scroll reveal animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  }, observerOptions);
+
+  // Observe all reveal elements
+  document.querySelectorAll(".reveal").forEach((element) => {
+    observer.observe(element);
+  });
+
+  // Smooth scroll behavior for nav links
+  document.querySelectorAll(".nav a").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+
+  // Mouse move effect for skill cards
+  document.querySelectorAll(".skill-card").forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty("--mouse-x", `${x}%`);
+      card.style.setProperty("--mouse-y", `${y}%`);
+    });
+  });
+
+  // Parallax effect for floating shapes
+  document.addEventListener("mousemove", (e) => {
+    const shapes = document.querySelectorAll(".shape");
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+    
+    shapes.forEach((shape, index) => {
+      const speed = (index + 1) * 20;
+      const xMove = (x - 0.5) * speed;
+      const yMove = (y - 0.5) * speed;
+      shape.style.transform = `translate(${xMove}px, ${yMove}px)`;
+    });
+  });
+
+  // Add cursor trail effect
+  const cursorTrail = [];
+  const trailLength = 10;
+
+  for (let i = 0; i < trailLength; i++) {
+    const dot = document.createElement("div");
+    dot.className = "cursor-dot";
+    dot.style.cssText = `
+      position: fixed;
+      width: ${8 - i * 0.5}px;
+      height: ${8 - i * 0.5}px;
+      background: radial-gradient(circle, rgba(168, 85, 247, ${1 - i * 0.1}), transparent);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transition: opacity 0.3s ease;
+      opacity: 0;
+    `;
+    document.body.appendChild(dot);
+    cursorTrail.push({ element: dot, x: 0, y: 0 });
+  }
+
+  let mouseX = 0, mouseY = 0;
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function animateTrail() {
+    let x = mouseX, y = mouseY;
+    
+    cursorTrail.forEach((dot, index) => {
+      dot.x += (x - dot.x) * 0.3;
+      dot.y += (y - dot.y) * 0.3;
+      
+      dot.element.style.left = dot.x + "px";
+      dot.element.style.top = dot.y + "px";
+      dot.element.style.opacity = 0.8 - index * 0.08;
+      
+      x = dot.x;
+      y = dot.y;
+    });
+    
+    requestAnimationFrame(animateTrail);
+  }
+
+  animateTrail();
+
+  // Theme toggle
+  const themeToggle = document.getElementById('themeToggle');
+  const savedTheme = localStorage.getItem('theme');
+  
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-theme');
+  }
+  
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+    const isLight = document.body.classList.contains('light-theme');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+</script>
+</html>
