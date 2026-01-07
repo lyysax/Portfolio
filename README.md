@@ -10,7 +10,11 @@ Aucune dépendance externe n'est nécessaire.  Il vous suffit d'avoir un navigat
 
 ### Méthode 1 : Ouvrir directement le fichier
 
+<<<<<<< HEAD
 1. **Cloner le repository sur votre éditeur de code** :
+=======
+1. **Cloner le repository** :
+>>>>>>> bd667e651efef56b5f07945af44f2ffc4f6d28f5
    ```bash
    git clone https://github.com/lyysax/Portfolio.git
    cd Portfolio
