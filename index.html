@@ -55,7 +55,7 @@
             <p class="body">Intégration de pages web responsives, structuration du contenu et mise en forme.</p>
           </div>
           <div class="skill-card stagger-item">
-            <p class="label">JavaScript/JavaFX</p>
+            <p class="label">Java/JavaFX</p>
             <p class="body">Interactions dynamiques, logique côté client, manipulation du DOM.</p>
           </div>
           <div class="skill-card stagger-item">
@@ -140,13 +140,15 @@
           <div>
             <p class="label">CV</p>
             <p class="body">Télécharge mon CV pour en savoir plus sur mon parcours et expériences.</p>
-            <a class="btn secondary" href="assets/cv.jpg" target="_blank" rel="noreferrer">Voir mon CV</a>
+            <a class="btn secondary" href="assets/cv.jpg" target="_blank" rel="noreferrer">Voir mon CV (ancien)</a>
           </div>
           <div>
             <p class="label">Contact</p>
             <p class="body">Disponible pour échanger et répondre rapidement.</p>
             <div class="contact-links">
-              <a class="pill-link" href="mailto:lisa.anton0705@gmail.com">lisa.anton0705@gmail.com</a>
+              <span class="pill-link" aria-label="Adresse e-mail">lisa.anton0705@gmail.com</span>
+              <a class="pill-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=lisa.anton0705@gmail.com&su=Contact%20depuis%20le%20portfolio&body=Bonjour%20Lisa%2C%0A%0AJe%20vous%20contacte%20via%20votre%20portfolio%20au%20sujet%20de%20...%0A%0ACordialement%2C%0A[Votre%20nom]" target="_blank" rel="noreferrer">Gmail</a>
+              <a class="pill-link" href="https://outlook.live.com/mail/0/deeplink/compose?to=lisa.anton0705@gmail.com&subject=Contact%20depuis%20le%20portfolio&body=Bonjour%20Lisa%2C%0A%0AJe%20vous%20contacte%20via%20votre%20portfolio%20au%20sujet%20de%20...%0A%0ACordialement%2C%0A[Votre%20nom]" target="_blank" rel="noreferrer">Outlook</a>
               <a class="pill-link" href="https://www.linkedin.com/in/lisa-anton-0070b22a5/" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
           </div>
@@ -187,11 +189,15 @@
   // Smooth scroll behavior for nav links
   document.querySelectorAll(".nav a").forEach((link) => {
     link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute("href"));
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      const href = link.getAttribute("href") || "";
+      if (href.startsWith("#")) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       }
+      // for non-anchor links (e.g., CV image), allow default behavior
     });
   });
 
@@ -282,5 +288,7 @@
     const isLight = document.body.classList.contains('light-theme');
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
   });
+
+  // No copy-to-clipboard button; email stays visible as text
 </script>
 </html>
